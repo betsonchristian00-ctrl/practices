@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABDULLZ0023 HOTELS AND APPARTMENTS BOOKING SITE</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:f10f10f10f10;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.page{
+    display:none;
+    text-align:center;
+    padding:30px;
+}
+
+.page.active{
+    display:block;
+}
+
+img{
+    width:80%;
+    max-width:700px;
+    height:400px;
+    object-fit:cover;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+h2{
+    margin:15px;
+}
+
+p{
+    font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Apartment Booking System</h1>
+</header>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+
+<h2>WELCOME TO ABDULLZ0023 HOTELS AND APPARTMENTS</h2>
+<img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1000">
+<p>We provide affordable and five star services to our customers at a high quality and modern experiences<br>
+Being a part of us will wonder you by how much your pay and our services encourage more stay<br>
+We love you as you have commit to be part of us </p>
+Book comfortable rooms at affordable prices.<br>
+</p>
+<P>YOU ARE WARMLY WELCOME<BR>
+CLICK BELOW  FOR MORE DETAILS AND INFORMATIONS</P>
+
+<button onclick="nextPage(2)">Next →</button>
+
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+
+<h2>SINGLE ROOM</h2>
+<P>This is a room that allows a single person to live and enjoy</P>
+<p>It is contained with full resources and fully equiped with all necessary amenities that will make you have a nice stay ever<br>
+It also has a comfortable bed and a private bathroom, toilet and 24-hour security<br>
+We are here to serve you the best! </p>
+
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1000"
+alt="Single Room">
+
+<p><b>Price:</b> $40 Per Night</p>
+
+<p>Ideal for one guest.<br> If such a room is what you are looking for, we are here to serve you with our best services and quality<br>
+ A special offer is available for long-term stays and those booking more than 3 nights. Contact us for more details. Don't miss it!
+</p>
+
+<br>
+
+<button onclick="previousPage(1)">← Previous</button>
+
+<button onclick="nextPage(3)">Next →</button>
+
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+
+<h2>DELUXE ROOM</h2>
+<P>This is a room with luxurios structure that will actually catch your emotions
+<br>A special with it is that it has a balcony and a king-size bed, which will make your stay more comfortable and enjoyable.<br>
+Special built-in toilet, bathroom kitchen and swimming pool overseeing the beautiful view of the city and natural scenery.<br>
+Vip services are available for those who want to enjoy the best moments and experiences with us.
+</P>
+
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1000"
+alt="Deluxe Room">
+
+<p><b>Price:</b> $80 Per Night</p>
+
+<p>Luxury room with balcony and king-size bed.<br>
+How are you going to miss it!!</p>
+
+<br>
+
+<button onclick="previousPage(2)">← Previous</button>
+
+<button onclick="nextPage(4)">Next →</button>
+
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+
+<h2>FAMILY ROOM</h2>
+<P>This is a room that is useful for those who want to enjoy useful moments with their family.<br> 
+  It allows more than three persom to enjoy and taste the best feelings and staying </P>
+  <p>If you need to give your family a comfortable and memorable stay, this is the perfect option for you.<br>
+For you and your family, the room is equiped with full and all necessary ammenities required for you and your family including<br>
+Kitchen<br> Toilet and bathroom<br> swimmingpool<br>Dressng place and built-in sitting room </p>
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1000">
+
+<p><b>Price:</b> $120 Per Night</p>
+
+<p>Suitable for 4–6 people with kitchen and living room.<br>
+    Nothing here you can miss come on!! 
+</p>
+<P> You can also book and manage your reservations online at any time through our website.<br>
+Our payment options are flexible and secure and you are allowed to make payments at your convenience.<br>
+Pay through our secure payment gateway.<br>
+Pay your bill at any time through:<br>
+<ol>
+    <li>Credit Card at 284655FR64554</li>
+    <li>Debit Card at YS764578300P </li>
+    <li>mobile money:<BR> +255676215962 <BR> +255702215962</li>
+    <li>PayPal at 4328vvc90878 and </li>
+    <li>Bank transfer at 015201c91k00</li>
+</ol></P>
+
+<br>
+
+<button onclick="previousPage(3)">← Previous</button>
+
+<button onclick="bookRoom()">Book Now</button>
+
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+
+<h2>BOOKING CONFIRMATIONS</h2>
+
+<h3>Your room has been booked successfully!</h3>
+
+<p>Thank you for choosing our apartment.<br>
+We are happy for you being part of us.</p>
+<P> You can also view your booking details at any time.</P>
+<p>We hope you have a great stay with us.<br>
+You can also contact us for any assistance through our customer support team with phone number: +255676215962 and email:abdullzbs443@gmail.com<br></p>
+<p>You can also get our services at any time through our websiteand media platforms. we are available for you at any timeb and we are happy to serve you with our best servives and quality.
+<br>We are also availlable in other regions and countries like:<br> Tanzania, Kenya, Uganda, Rwanda, Burundi, South Africa, Nigeria, Ghana, and many more.<br>
+ We are also available in other continents like Europe, Asia, America and Australia. <br>
+<p>You can also book and manage your reservations online at any time through our website.<p>  
+<p> INTERESTINGLY ENOUGH FREE RESOURCES ARE AVAILABLE FOR YOU SUCH AS:<BR> Free wifi<br>Free night meal<br>
+    Free 5 days with no payment for staying with us  for more than two weeks, Don't miss this!</p>
+<p>WELCOME TO OUR HOTELS AND APPARTMENTS<br>
+YOU ARE GOING TO BEXPERIENCE WONDERFUL MOMENTS!  </p>
+
+
+<br>
+
+<button onclick="previousPage(4)">← Previous</button>
+
+<button onclick="showPage(1)">Home</button>
+
+</div>
+
+<script>
+
+function showPage(pageNumber){
+
+let pages=document.querySelectorAll(".page");
+
+pages.forEach(function(page){
+page.classList.remove("active");
+});
+
+document.getElementById("page"+pageNumber).classList.add("active");
+
+}
+
+function nextPage(pageNumber){
+
+showPage(pageNumber);
+
+}
+
+function previousPage(pageNumber){
+
+showPage(pageNumber);
+
+}
+
+function bookRoom(){
+
+showPage(5);
+
+}
+
+</script>
+
+</body>
+</html>
